@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import os
 from crawl_url import crawl_url
 from model import GeneralModel
 
@@ -12,7 +11,7 @@ load_dotenv()
 
 pred = GeneralModel()
 
-api_key = os.environ["OPENAI_API_KEY"]
+api_key = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_data
 def process_prompt(input):
