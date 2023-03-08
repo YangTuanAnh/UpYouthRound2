@@ -12,7 +12,7 @@ The response must be returned with each answer being in a seperate line, and eac
 
 There should be one correct answer and 3 incorrect answers. The incorrect answers should be response options that a candidate with incomplete knowledge or skill might choose. 
 
-Provide an explanation for the answer to each question as well. The question must be about a scenario, and not a simple definition question such as What type of storage is Amazon S3. 
+Provide an explanation for the answer to each question as well. The question must be about a scenario, and not a simple definition question. 
 
 The answers must also be action-oriented and not just the name of a concept.
 
