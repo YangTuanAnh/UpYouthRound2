@@ -31,7 +31,7 @@ if api_key:
     #     max_chars=150,
     #     height=100,
     # )
-    input = st.text_input("Document URL")
+    input = st.text_input("Document URL (doesn't work with google docs, notion, ...)")
 
     if st.button("Submit"):
         with st.spinner(text="In progress"):
