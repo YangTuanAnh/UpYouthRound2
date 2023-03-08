@@ -1,2 +1,2 @@
-./streamlit
-./_pycache_
+.streamlit/
+_pycache_/
