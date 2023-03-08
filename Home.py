@@ -1,16 +1,18 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import os
 from crawl_url import crawl_url
 from model import GeneralModel
 
-
+from dotenv import load_dotenv
+load_dotenv()
 
 '# MyThorch'
 
 pred = GeneralModel()
 
-api_key = st.text_input("OpenAI API Key", "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")
+api_key = os.environ["OPENAI_API_KEY"]
 
 @st.cache_data
 def process_prompt(input):
