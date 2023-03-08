@@ -31,7 +31,8 @@ if api_key:
     #     max_chars=150,
     #     height=100,
     # )
-    input = st.text_input("Document URL (doesn't work with google docs, notion, ...)")
+    input = st.text_input("Document URL")
+    st.write("Wiki, news,... (doesn't work with google docs, notion, ...)\nThe context is limited (cutoff) to 1000 characters.")
 
     if st.button("Submit"):
         with st.spinner(text="In progress"):
